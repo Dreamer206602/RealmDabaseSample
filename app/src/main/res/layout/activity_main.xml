@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:id="@+id/swipeRefreshLayout"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.mx.realmdabasesample.MainActivity">
-    <android.support.v7.widget.RecyclerView
-        app:layoutManager="LinearLayoutManager"
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
-</android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/rxJava"
+            android:text="@string/RxJava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
