@@ -2,6 +2,10 @@ package com.mx.rxjavaexample.app;
 
 import android.app.Application;
 
+import com.mx.rxjavaexample.model.Person;
+
+import java.util.Map;
+import java.util.Random;
 import java.util.TreeMap;
 
 import io.realm.Realm;
@@ -41,8 +45,26 @@ public class MyApplication extends Application {
     // Create test data
     private void createTestData() {
 
+        final Random random=new Random(42);
+        Realm realm = Realm.getDefaultInstance();
+        realm.executeTransaction(new Realm.Transaction() {
+            @Override
+            public void execute(Realm realm) {
+                for(Map.Entry<String,String>entry:testPersons.entrySet()){
+                    Person person = realm.createObject(Person.class);
+                    person.setName(entry.getKey());
+                    person.setGithubUserName(entry.getValue());
+                    person.setAge(random.nextInt(100));
+                }
+
+            }
+        });
+        realm.close();
 
 
+    }
 
+    public static MyApplication getContext(){
+        return sMyApplication;
     }
 }
