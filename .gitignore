@@ -6,3 +6,10 @@
 .DS_Store
 /build
 /captures
+app/libs/
+app/src/main/res/drawable/
+gridviewexample/libs/
+gridviewexample/src/main/java/
+gridviewexample/src/main/res/drawable/
+rxjavaexample/libs/
+rxjavaexample/src/main/res/drawable/

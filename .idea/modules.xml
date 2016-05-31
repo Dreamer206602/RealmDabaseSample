@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RealmDabaseSample.iml" filepath="$PROJECT_DIR$/RealmDabaseSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gridviewexample/gridviewexample.iml" filepath="$PROJECT_DIR$/gridviewexample/gridviewexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjavaexample/rxjavaexample.iml" filepath="$PROJECT_DIR$/rxjavaexample/rxjavaexample.iml" />
     </modules>
   </component>

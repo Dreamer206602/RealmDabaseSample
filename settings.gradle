@@ -1,1 +1,1 @@
-include ':app', ':rxjavaexample'
+include ':app', ':rxjavaexample', ':gridviewexample'
